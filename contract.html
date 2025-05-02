@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            border: 2px solid #2b3a67;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2b3a67;
+            margin-bottom: 15px;
+        }
+        .title-bar {
+            background-color: #2b3a67;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .company-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .logo-container {
+            flex: 1;
+        }
+        .contact-info {
+            flex: 2;
+            padding-left: 20px;
+        }
+        .features-bar {
+            background-color: #2b3a67;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .section-title {
+            background-color: #2b3a67;
+            color: white;
+            padding: 8px;
+            border-radius: 5px 5px 0 0;
+            font-weight: bold;
+        }
+        .section-content {
+            padding: 15px;
+            border: 1px solid #2b3a67;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 15px;
+        }
+        .field {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .field label {
+            font-weight: bold;
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .field .line {
+            flex: 1;
+            border-bottom: 1px solid #2b3a67;
+        }
+        .work-field {
+            border-bottom: 1px solid #2b3a67;
+            height: 25px;
+            margin-bottom: 10px;
+        }
+        .proposal-text {
+            font-style: italic;
+            margin: 15px 0;
+        }
+        .amount-line {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .amount-line .line {
+            flex: 1;
+            border-bottom: 1px solid #2b3a67;
+            margin: 0 10px;
+        }
+        .deposit {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .deposit-label {
+            font-weight: bold;
+        }
+        .deposit-line {
+            flex: 1;
+            border-bottom: 1px solid #2b3a67;
+            margin-left: 10px;
+            max-width: 200px;
+        }
+        .divider {
+            border-top: 2px solid #2b3a67;
+            margin: 15px 0;
+        }
+        .acceptance {
+            font-size: 0.8em;
+            margin: 10px 0;
+        }
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .signature-field {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .signature-line {
+            border-bottom: 1px solid #2b3a67;
+            margin: 5px 0;
+            height: 20px;
+        }
+        .signature-label {
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">ESTIMATE / CONTRACT</div>
+    <div class="company-info">
+        <div class="logo-container">
+            <!-- Replace with actual logo -->
+            <div style="width: 150px; height: 80px; background-color: #2b3a67; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                <span>LIFETIME<br>QUALITY</span>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> (631) 660-7449</p>
+            <p><strong>Email:</strong> hello@reallygreatsite.com</p>
+            <p><strong>Website:</strong> lifetimequalityconstruction.com</p>
+            <p><strong>Address:</strong> 123 Anywhere St., Any City</p>
+        </div>
+    </div>
+    
+    <div class="features-bar">
+        <span>LICENSED & INSURED</span>
+        <span>FREE ESTIMATES</span>
+        <span>24 HOURS SERVICE</span>
+        <span>FAMILY OWNED & OPERATED</span>
+    </div>
+    
+    <div class="section-title">CUSTOMER</div>
+    <div class="section-content">
+        <div class="field">
+            <label>DATE:</label>
+            <div class="line"></div>
+        </div>
+        <div class="field">
+            <label>NAME:</label>
+            <div class="line"></div>
+        </div>
+        <div class="field">
+            <label>ADDRESS:</label>
+            <div class="line"></div>
+        </div>
+        <div class="field">
+            <label>PHONE:</label>
+            <div class="line"></div>
+        </div>
+        <div class="field">
+            <label>EMAIL:</label>
+            <div class="line"></div>
+        </div>
+    </div>
+    
+    <div class="section-title">WORK TO BE DONE AS SPECIFIED</div>
+    <div class="section-content">
+        <div class="work-field"></div>
+        <div class="work-field"></div>
+        <div class="work-field"></div>
+        <div class="work-field"></div>
+        <div class="work-field"></div>
+        <div class="work-field"></div>
+        <div class="work-field"></div>
+    </div>
+    
+    <div class="proposal-text">
+        <strong>WE PROPOSE</strong> hereby to furnish material, labour and debris container-complete in accordance with the specifications, for the sum of:
+    </div>
+    
+    <div class="amount-line">
+        <div class="line"></div>
+        dollars ($
+        <div class="line"></div>)
+    </div>
+    
+    <div class="deposit">
+        <span class="deposit-label">DEPOSIT: $</span>
+        <div class="deposit-line"></div>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="acceptance">
+        <strong>ACCEPTANCE OF PROPOSAL</strong><br>
+        THE PRICES, SPECIFICATIONS AND CONDITIONS ARE SATISFACTORY AND ARE HEREBY ACCEPTED. YOU ARE AUTHORIZED TO DO THE WORK AS SPECIFIED. PAYMENT WILL BE MADE AS OUTLINED ABOVE.
+    </div>
+    
+    <div class="signatures">
+        <div class="signature-field">
+            <div class="signature-label">CONTRACTOR SIGNATURE</div>
+            <div class="signature-line"></div>
+            <div class="signature-label">DATE</div>
+            <div class="signature-line"></div>
+        </div>
+        <div class="signature-field">
+            <div class="signature-label">OWNER'S SIGNATURE</div>
+            <div class="signature-line"></div>
+            <div class="signature-label">DATE</div>
+            <div class="signature-line"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
