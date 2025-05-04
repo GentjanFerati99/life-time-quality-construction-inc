@@ -36,6 +36,7 @@ const Navbar = () => {
     { name: "Gutters", href: "/services/gutters" },
     { name: "Skylight", href: "/services/skylight" },
     { name: "Flat Roof", href: "/services/flat-roof" },
+    { name: "Chimney", href: "/services/chimney" },
     { name: "Contact", href: "/contact" },
   ];
 

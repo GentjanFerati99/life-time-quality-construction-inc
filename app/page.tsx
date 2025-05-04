@@ -51,6 +51,13 @@ export default function Home() {
       backgroundImage: "/images/flat-roof/flat-roof-card.jpg",
       link: "/services/flat-roof",
     },
+    {
+      title: "Chimney",
+      description:
+        "Expert chimney repair, maintenance, and installation services for safety and efficiency.",
+      backgroundImage: "/images/chimney/chimney-card.jpg",
+      link: "/services/chimney",
+    },
   ];
 
   const testimonials = [
@@ -77,6 +84,296 @@ export default function Home() {
         "The team installed new siding on our home and it looks fantastic! They were courteous, professional, and the price was very reasonable. The warranty they offer gives us great peace of mind.",
       rating: 5,
       image: "/placeholder.svg?height=60&width=60",
+    },
+  ];
+
+  // Service area data
+  const serviceAreas = [
+    {
+      county: "Suffolk County NY",
+      towns: [
+        {
+          name: "Town of Babylon",
+          locations: [
+            "Amityville NY",
+            "Babylon NY",
+            "Copiague NY",
+            "Deer Park NY",
+            "Lindenhurst NY",
+            "North Amityville NY",
+            "North Babylon NY",
+            "West Babylon NY",
+            "Wyandanch NY",
+          ],
+        },
+        {
+          name: "Town of Brookhaven",
+          locations: [
+            "Bellport NY",
+            "Blue Point NY",
+            "Brookhaven NY",
+            "Calverton NY",
+            "Centereach NY",
+            "Center Moriches NY",
+            "Coram NY",
+            "East Moriches NY",
+            "East Patchogue NY",
+            "Eastport NY",
+            "East Setauket NY",
+            "Farmingville NY",
+            "Holbrook NY",
+            "Holtsville NY",
+            "Lake Grove NY",
+            "Manorville NY",
+            "Mastic NY",
+            "Mastic Beach NY",
+            "Medford NY",
+            "Middle Island NY",
+            "Miller Place NY",
+            "Moriches NY",
+            "Mount Sinai NY",
+            "North Patchogue NY",
+            "Patchogue NY",
+            "Port Jefferson NY",
+            "Port Jefferson Station NY",
+            "Ridge NY",
+            "Rocky Point NY",
+            "Ronkonkoma NY",
+            "Selden NY",
+            "Shirley NY",
+            "East Shoreham NY",
+            "Shoreham NY",
+            "Sound Beach NY",
+            "Stony Brook NY",
+            "Upton NY",
+            "Wading River NY",
+            "Yaphank NY",
+          ],
+        },
+        {
+          name: "Town of East Hampton",
+          locations: [
+            "Amagansett NY",
+            "East Hampton NY",
+            "East Hampton North NY",
+            "Montauk NY",
+            "Napeague NY",
+            "Northwest Harbor NY",
+            "Sag Harbor NY",
+            "Springs NY",
+            "Wainscott NY",
+          ],
+        },
+        {
+          name: "Town of Huntington",
+          locations: [
+            "Centerport NY",
+            "Cold Spring Harbor NY",
+            "Commack NY",
+            "East Northport NY",
+            "Greenlawn NY",
+            "Huntington NY",
+            "Huntington Station NY",
+            "Lloyd Harbor NY",
+            "Melville NY",
+            "Northport NY",
+          ],
+        },
+        {
+          name: "Town of Islip",
+          locations: [
+            "Bayport NY",
+            "Bay Shore NY",
+            "Bohemia NY",
+            "Brentwood NY",
+            "Brightwaters NY",
+            "Central Islip NY",
+            "East Islip NY",
+            "Great River NY",
+            "Hauppauge NY",
+            "Islandia NY",
+            "Islip NY",
+            "Islip Terrace NY",
+            "Oakdale NY",
+            "Ocean Beach NY",
+            "Ronkonkoma NY",
+            "Sayville NY",
+            "West Islip NY",
+            "West Sayville NY",
+          ],
+        },
+        {
+          name: "Town of Riverhead",
+          locations: [
+            "Aquebogue NY",
+            "Calverton NY",
+            "Jamesport NY",
+            "Laurel NY",
+            "Manorville NY",
+            "Riverhead NY",
+            "South Jamesport NY",
+            "Wading River NY",
+          ],
+        },
+        {
+          name: "Town of Shelter Island",
+          locations: ["Shelter Island NY", "Shelter Island Heights NY"],
+        },
+        {
+          name: "Town of Smithtown",
+          locations: [
+            "Commack NY",
+            "Hauppauge NY",
+            "Kings Park NY",
+            "Nesconset NY",
+            "Saint James NY",
+            "Smithtown NY",
+          ],
+        },
+        {
+          name: "Town of Southampton",
+          locations: [
+            "Bridgehampton NY",
+            "Eastport NY",
+            "East Quogue NY",
+            "Flanders NY",
+            "Hampton Bays NY",
+            "Northampton NY",
+            "North Haven NY",
+            "North Sea NY",
+            "Noyack NY",
+            "Quogue NY",
+            "Remsenburg NY",
+            "Riverside NY",
+            "Sagaponack NY",
+            "Sag Harbor NY",
+            "Shinnecock Hills NY",
+            "Speonk NY",
+            "Water Mill NY",
+            "Southampton NY",
+            "Westhampton NY",
+            "Westhampton Beach NY",
+          ],
+        },
+        {
+          name: "Town of Southold",
+          locations: [
+            "Cutchogue NY",
+            "East Marion NY",
+            "Fishers Island NY",
+            "Greenport NY",
+            "Laurel NY",
+            "Mattituck NY",
+            "New Suffolk NY",
+            "Orient NY",
+            "Peconic NY",
+            "Southold NY",
+          ],
+        },
+        {
+          name: "Fire Island NY",
+          locations: ["Fire Island NY"],
+        },
+      ],
+    },
+    {
+      county: "Nassau County NY",
+      towns: [
+        {
+          name: "Town of Hempstead",
+          locations: [
+            "Atlantic Beach NY",
+            "Baldwin NY",
+            "Bellerose Terrace NY",
+            "Bellmore NY",
+            "Bethpage NY",
+            "Cedarhurst NY",
+            "East Meadow NY",
+            "East Rockaway NY",
+            "Elmont NY",
+            "Floral Park NY",
+            "Franklin Square NY",
+            "Freeport NY",
+            "Garden City NY",
+            "Hempstead NY",
+            "Hewlett NY",
+            "Inwood NY",
+            "Island Park NY",
+            "Lawrence NY",
+            "Levittown NY",
+            "Lynbrook NY",
+            "Malverne NY",
+            "Merrick NY",
+            "Mineola NY",
+            "New Hyde Park NY",
+            "North Lynbrook NY",
+            "North Valley Stream NY",
+            "North Woodmere NY",
+            "Oceanside NY",
+            "Point Lookout NY",
+            "Rockville Centre NY",
+            "Roosevelt NY",
+            "Seaford NY",
+            "South Hempstead NY",
+            "Uniondale NY",
+            "Valley Stream NY",
+            "Wantagh NY",
+            "West Hempstead NY",
+            "Woodmere NY",
+          ],
+        },
+        {
+          name: "Town of North Hempstead",
+          locations: [
+            "Albertson NY",
+            "Carle Place NY",
+            "Floral Park NY",
+            "Glenwood Landing NY",
+            "Great Neck NY",
+            "Greenvale NY",
+            "Kings Point NY",
+            "Manhasset NY",
+            "Mineola NY",
+            "New Hyde Park NY",
+            "North New Hyde Park NY",
+            "Old Westbury NY",
+            "Port Washington NY",
+            "Roslyn NY",
+            "Roslyn Heights NY",
+            "Westbury NY",
+            "Williston Park NY",
+          ],
+        },
+        {
+          name: "Town of Oyster Bay",
+          locations: [
+            "Bayville NY",
+            "Bethpage NY",
+            "East Norwich NY",
+            "Farmingdale NY",
+            "Glen Head NY",
+            "Glenwood Landing NY",
+            "Greenvale NY",
+            "Hicksville NY",
+            "Jericho NY",
+            "Locust Valley NY",
+            "Massapequa NY",
+            "Massapequa Park NY",
+            "Mill Neck NY",
+            "Old Bethpage NY",
+            "Old Westbury NY",
+            "Oyster Bay NY",
+            "Plainview NY",
+            "Sea Cliff NY",
+            "Syosset NY",
+            "Woodbury NY",
+          ],
+        },
+        {
+          name: "Other",
+          locations: ["Long Beach NY", "Glen Cove NY"],
+        },
+      ],
     },
   ];
 
@@ -133,7 +430,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-white dark:bg-gray-800">
+      <section id="our-services" className="py-16 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-2">
@@ -247,8 +544,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Service Area Section */}
+      <section id="service-areas" className="py-16 bg-white dark:bg-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-2">
+              Service Areas
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Areas We Serve
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              We proudly provide our quality construction services throughout
+              Long Island, including the following areas:
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {serviceAreas.map((county, countyIndex) => (
+              <div
+                key={countyIndex}
+                className="bg-gray-50 dark:bg-gray-900 rounded-lg p-6"
+              >
+                <h3 className="text-2xl font-bold mb-4 text-red-700 dark:text-red-500">
+                  {county.county}
+                </h3>
+                <div className="space-y-6">
+                  {county.towns.map((town, townIndex) => (
+                    <div key={townIndex}>
+                      <h4 className="text-xl font-semibold mb-3">
+                        {town.name}
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {town.locations.map((location, locationIndex) => (
+                          <span
+                            key={locationIndex}
+                            className="bg-white dark:bg-gray-800 px-3 py-1 rounded-full text-sm border border-gray-200 dark:border-gray-700"
+                          >
+                            {location}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              Not sure if we service your area? Contact us to find out!
+            </p>
+            <Button asChild className="bg-red-700 hover:bg-red-800">
+              <Link href="/contact">Contact Us</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-16 bg-white dark:bg-gray-800">
+      <section id="testimonials" className="py-16 bg-gray-100 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-2">
@@ -302,7 +658,7 @@ export default function Home() {
               size="lg"
               className="bg-white text-red-700 hover:bg-red-100"
             >
-              <a href="tel:5551234567">Call (555) 123-4567</a>
+              <a href="tel:6316607449">Call (631) 660-7449</a>
             </Button>
           </div>
         </div>

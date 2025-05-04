@@ -1,11 +1,13 @@
-import type { Metadata } from "next"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
-import ContactForm from "@/components/contact-form"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import ContactForm from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact Us | LIFETIME QUALITY CONSTRUCTION INC.",
-  description: "Contact LIFETIME QUALITY CONSTRUCTION INC. for all your roofing and construction needs.",
-}
+  description:
+    "Contact LIFETIME QUALITY CONSTRUCTION INC. for all your roofing and construction needs.",
+};
 
 export default function ContactPage() {
   return (
@@ -15,7 +17,8 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h1>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Have questions or ready to start your project? Reach out to our team for a free consultation and estimate.
+            Have questions or ready to start your project? Reach out to our team
+            for a free consultation and estimate.
           </p>
         </div>
       </section>
@@ -36,8 +39,12 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-red-600 mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-gray-600 dark:text-gray-300">(555) 123-4567</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Available 24/7 for emergencies</p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        (631) 660-7449
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                        Available 24/7 for emergencies
+                      </p>
                     </div>
                   </div>
 
@@ -45,8 +52,12 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 text-red-600 mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600 dark:text-gray-300">info@lifetimequality.com</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">We'll respond within 24 hours</p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        lifetimequalityconstruction@gmail.com
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                        We'll respond within 24 hours
+                      </p>
                     </div>
                   </div>
 
@@ -54,9 +65,15 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6 text-red-600 mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Office Location</h3>
-                      <p className="text-gray-600 dark:text-gray-300">123 Construction Ave</p>
-                      <p className="text-gray-600 dark:text-gray-300">Building City, ST 12345</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Mon-Fri: 8am-5pm, Sat: 9am-2pm</p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        123 Construction Ave
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Building City, ST 12345
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                        Mon-Fri: 8am-5pm, Sat: 9am-2pm
+                      </p>
                     </div>
                   </div>
 
@@ -64,9 +81,15 @@ export default function ContactPage() {
                     <Clock className="h-6 w-6 text-red-600 mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Hours of Operation</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Monday - Friday: 8:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600 dark:text-gray-300">Saturday: 9:00 AM - 2:00 PM</p>
-                      <p className="text-gray-600 dark:text-gray-300">Sunday: Closed</p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Monday - Friday: 8:00 AM - 5:00 PM
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Saturday: 9:00 AM - 2:00 PM
+                      </p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        Sunday: Closed
+                      </p>
                       <p className="text-sm text-red-600 dark:text-red-400 font-medium mt-1">
                         24/7 Emergency Service Available
                       </p>
@@ -78,18 +101,51 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-6">Our Service Area</h2>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  We proudly serve the following areas and surrounding communities:
+                  We proudly serve Suffolk and Nassau Counties on Long Island,
+                  including:
                 </p>
-                <ul className="grid grid-cols-2 gap-2 text-gray-600 dark:text-gray-300">
-                  <li>• City Name</li>
-                  <li>• City Name</li>
-                  <li>• City Name</li>
-                  <li>• City Name</li>
-                  <li>• City Name</li>
-                  <li>• City Name</li>
-                </ul>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                  <div>
+                    <h3 className="font-semibold text-red-700 dark:text-red-500 mb-2">
+                      Suffolk County
+                    </h3>
+                    <ul className="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                      <li>• Town of Babylon</li>
+                      <li>• Town of Brookhaven</li>
+                      <li>• Town of East Hampton</li>
+                      <li>• Town of Huntington</li>
+                      <li>• Town of Islip</li>
+                      <li>• Town of Riverhead</li>
+                      <li>• Town of Shelter Island</li>
+                      <li>• Town of Smithtown</li>
+                      <li>• Town of Southampton</li>
+                      <li>• Town of Southold</li>
+                      <li>• Fire Island</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-red-700 dark:text-red-500 mb-2">
+                      Nassau County
+                    </h3>
+                    <ul className="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                      <li>• Town of Hempstead</li>
+                      <li>• Town of North Hempstead</li>
+                      <li>• Town of Oyster Bay</li>
+                      <li>• Long Beach</li>
+                      <li>• Glen Cove</li>
+                    </ul>
+                  </div>
+                </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
-                  Not sure if we service your area? Contact us to find out!
+                  For a complete list of all locations we serve, please visit
+                  our{" "}
+                  <Link
+                    href="/#service-areas"
+                    className="text-red-600 dark:text-red-400 hover:underline"
+                  >
+                    service areas section
+                  </Link>{" "}
+                  on our homepage.
                 </p>
               </div>
             </div>
@@ -102,16 +158,20 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold">Find Us</h2>
-            <p className="text-gray-600 dark:text-gray-300">Visit our office or job sites in progress</p>
+            <p className="text-gray-600 dark:text-gray-300">
+              Visit our office or job sites in progress
+            </p>
           </div>
           <div className="h-[400px] bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
             {/* Map placeholder - would be replaced with actual map component */}
             <div className="w-full h-full flex items-center justify-center">
-              <p className="text-gray-500 dark:text-gray-400">Map would be displayed here</p>
+              <p className="text-gray-500 dark:text-gray-400">
+                Map would be displayed here
+              </p>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

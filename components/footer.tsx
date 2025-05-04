@@ -1,28 +1,48 @@
-import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react"
+import Link from "next/link";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-red-500">LIFETIME QUALITY CONSTRUCTION INC.</h3>
+            <h3 className="text-xl font-bold mb-4 text-red-500">
+              LIFETIME QUALITY CONSTRUCTION INC.
+            </h3>
             <p className="mb-4 text-gray-300">
-              Professional roofing and construction services with quality that lasts a lifetime.
+              Professional roofing and construction services with quality that
+              lasts a lifetime.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-red-500 transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-red-500 transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-red-500 transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </a>
@@ -33,28 +53,51 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/roofing" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/services/roofing"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Roofing
                 </Link>
               </li>
               <li>
-                <Link href="/services/siding" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/services/siding"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Siding
                 </Link>
               </li>
               <li>
-                <Link href="/services/gutters" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/services/gutters"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Gutters
                 </Link>
               </li>
               <li>
-                <Link href="/services/skylight" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/services/skylight"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Skylight
                 </Link>
               </li>
               <li>
-                <Link href="/services/flat-roof" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/services/flat-roof"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Flat Roof
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/chimney"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
+                  Chimney
                 </Link>
               </li>
             </ul>
@@ -64,22 +107,34 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-red-500 transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <a href="#testimonials" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a
+                  href="#testimonials"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
+                >
                   Testimonials
                 </a>
               </li>
@@ -91,15 +146,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 text-red-500 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300">(555) 123-4567</span>
+                <span className="text-gray-300">(631) 660-7449</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 text-red-500 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300">info@lifetimequality.com</span>
+                <span className="text-gray-300">
+                  lifetimequalityconstruction@gmail.com
+                </span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-red-500 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300">123 Construction Ave, Building City, ST 12345</span>
+                <span className="text-gray-300">
+                  348 revilo ave Shirley , NY 11967
+                </span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-2 text-red-500 flex-shrink-0 mt-0.5" />
@@ -113,7 +172,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-sm text-gray-400">
-                &copy; {currentYear} LIFETIME QUALITY CONSTRUCTION INC. All rights reserved.
+                &copy; {currentYear} LIFETIME QUALITY CONSTRUCTION INC. All
+                rights reserved.
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
@@ -134,7 +194,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

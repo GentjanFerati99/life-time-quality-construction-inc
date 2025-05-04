@@ -1,22 +1,31 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { AlertCircle, CheckCircle, Loader2 } from "lucide-react"
-import { Alert, AlertDescription } from "@/components/ui/alert"
-import { type ContactFormData, sendContactEmail } from "@/app/actions/send-email"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { AlertCircle, CheckCircle, Loader2 } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import {
+  type ContactFormData,
+  sendContactEmail,
+} from "@/app/actions/send-email";
 
 export default function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState<{
-    success?: boolean
-    message?: string
-  }>({})
+    success?: boolean;
+    message?: string;
+  }>({});
   const [formData, setFormData] = useState<ContactFormData>({
     firstName: "",
     lastName: "",
@@ -24,26 +33,31 @@ export default function ContactForm() {
     phone: "",
     service: "",
     message: "",
-  })
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setFormStatus({})
+    e.preventDefault();
+    setIsSubmitting(true);
+    setFormStatus({});
 
     try {
-      const result = await sendContactEmail(formData)
+      const result = await sendContactEmail(formData);
 
       if (result.success) {
         setFormStatus({
           success: true,
-          message: "Thank you! Your message has been sent successfully. We'll get back to you soon.",
-        })
+          message:
+            "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+        });
         // Reset form
         setFormData({
           firstName: "",
@@ -52,28 +66,30 @@ export default function ContactForm() {
           phone: "",
           service: "",
           message: "",
-        })
+        });
       } else {
         setFormStatus({
           success: false,
           message: result.error || "Something went wrong. Please try again.",
-        })
+        });
       }
     } catch (error) {
       setFormStatus({
         success: false,
         message: "An unexpected error occurred. Please try again later.",
-      })
+      });
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
 
   return (
     <Card>
       <CardHeader>
         <CardTitle>Get in Touch</CardTitle>
-        <CardDescription>Fill out the form below and we'll get back to you as soon as possible.</CardDescription>
+        <CardDescription>
+          Fill out the form below and we'll get back to you as soon as possible.
+        </CardDescription>
       </CardHeader>
       <CardContent>
         {formStatus.message && (
@@ -148,7 +164,7 @@ export default function ContactForm() {
               id="phone"
               name="phone"
               type="tel"
-              placeholder="(555) 123-4567"
+              placeholder="(631) 660-7449"
               value={formData.phone}
               onChange={handleChange}
               required
@@ -190,7 +206,11 @@ export default function ContactForm() {
             />
           </div>
 
-          <Button type="submit" className="w-full bg-red-700 hover:bg-red-800" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full bg-red-700 hover:bg-red-800"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...
@@ -202,5 +222,5 @@ export default function ContactForm() {
         </form>
       </CardContent>
     </Card>
-  )
+  );
 }

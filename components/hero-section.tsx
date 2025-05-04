@@ -48,7 +48,8 @@ const HeroSection = () => {
           >
             <p className="text-xl text-gray-200 mb-8">
               Professional roofing and construction services with a commitment
-              to excellence. Licensed & insured, family owned & operated.
+              to excellence. Licensed & insured, family-owned & operated, with
+              over 25 years of experience.
             </p>
           </motion.div>
 
@@ -71,7 +72,7 @@ const HeroSection = () => {
               variant="outline"
               className="bg-transparent border-white text-white hover:bg-white hover:text-red-700"
             >
-              <Link href="/services/roofing">Our Services</Link>
+              <Link href="#our-services">Our Services</Link>
             </Button>
           </motion.div>
         </div>
