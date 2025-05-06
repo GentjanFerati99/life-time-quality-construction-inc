@@ -20,7 +20,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/home-hero.png"
+          src="/images/home-hero.jpg"
           alt="Roofing Construction"
           fill
           priority
