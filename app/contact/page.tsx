@@ -66,13 +66,11 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold mb-1">Office Location</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        123 Construction Ave
+                        25 Carmen View Dr Shirley, NY 11967
                       </p>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        Building City, ST 12345
-                      </p>
+
                       <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                        Mon-Fri: 8am-5pm, Sat: 9am-2pm
+                        Mon-Sun: 8am-5pm
                       </p>
                     </div>
                   </div>
@@ -82,13 +80,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold mb-1">Hours of Operation</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Monday - Friday: 8:00 AM - 5:00 PM
-                      </p>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        Saturday: 9:00 AM - 2:00 PM
-                      </p>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        Sunday: Closed
+                        Monday - Sunday: 8:00 AM - 5:00 PM
                       </p>
                       <p className="text-sm text-red-600 dark:text-red-400 font-medium mt-1">
                         24/7 Emergency Service Available
@@ -165,9 +157,14 @@ export default function ContactPage() {
           <div className="h-[400px] bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
             {/* Map placeholder - would be replaced with actual map component */}
             <div className="w-full h-full flex items-center justify-center">
-              <p className="text-gray-500 dark:text-gray-400">
-                Map would be displayed here
-              </p>
+              <iframe
+                width="100%"
+                height="100%"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps?q=25+Carmen+View+Dr+Shirley,+NY+11967&output=embed`}
+              ></iframe>
             </div>
           </div>
         </div>

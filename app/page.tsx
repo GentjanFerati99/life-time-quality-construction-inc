@@ -20,7 +20,7 @@ export default function Home() {
       title: "Roofing",
       description:
         "Complete roofing solutions including installation, repair, and maintenance for all roof types.",
-      backgroundImage: "/images/roofing/roofing-card.png",
+      backgroundImage: "/images/roofing/roofing-card.jpg",
       link: "/services/roofing",
     },
     {

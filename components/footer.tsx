@@ -157,7 +157,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-red-500 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300">
-                  348 revilo ave Shirley , NY 11967
+                  25 Carmen View Dr Shirley, NY 11967
                 </span>
               </li>
               <li className="flex items-start">

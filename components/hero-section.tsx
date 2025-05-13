@@ -1,20 +1,10 @@
 "use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
   return (
     <section className="relative pt-20 lg:pt-24 overflow-hidden">
       {/* Background Image */}
@@ -74,6 +64,31 @@ const HeroSection = () => {
             >
               <Link href="#our-services">Our Services</Link>
             </Button>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4 mt-8"
+          >
+            <Image
+              src="/images/google.png"
+              alt="google"
+              height={50}
+              width={120}
+            />
+            <Image
+              src="/images/homeadvisor.png"
+              alt="homeadvisor"
+              height={50}
+              width={192}
+            />
+            <Image
+              src="/images/thumbtack.png"
+              alt="thumbtack"
+              height={50}
+              width={106}
+            />
           </motion.div>
         </div>
       </div>

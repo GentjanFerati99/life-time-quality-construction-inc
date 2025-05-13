@@ -27,7 +27,6 @@ export default function RoofingPage() {
     "/images/roofing/1.jpg",
     "/images/roofing/2.jpg",
     "/images/roofing/3.jpg",
-    "/images/roofing/4.jpg",
     "/images/roofing/5.jpg",
     "/images/roofing/6.jpg",
     "/images/roofing/7.jpg",
@@ -51,7 +50,7 @@ export default function RoofingPage() {
       <ServicePageHeader
         title="Roofing Services"
         description="Professional roofing solutions for residential and commercial properties"
-        backgroundImage="/images/roofing/roofing-card.png"
+        backgroundImage="/images/roofing/roofing-card.jpg"
       />
 
       {/* Service Overview */}
@@ -112,7 +111,7 @@ export default function RoofingPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/home-hero.png"
+                src="/images/home-hero.jpg"
                 alt="Roofing Services"
                 fill
                 className="object-cover"
@@ -276,7 +275,7 @@ export default function RoofingPage() {
               </p>
               <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden relative">
                 <Image
-                  src="/images/roofing/Metal Roofing.png"
+                  src="/images/roofing/Metal Roofing.jpg"
                   alt="Metal Roofing"
                   fill
                   className="object-cover"
@@ -308,7 +307,7 @@ export default function RoofingPage() {
               </p>
               <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden relative">
                 <Image
-                  src="/images/roofing/Slate Roofing.png"
+                  src="/images/roofing/Slate Roofing.jpg"
                   alt="Slate Roofing"
                   fill
                   className="object-cover"
